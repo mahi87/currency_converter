@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 flask = "==3.0.3"
+openai = "==1.45.0"
+currencyconverter = "==0.17.17"
 
 [dev-packages]
 
