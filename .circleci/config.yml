@@ -7,4 +7,7 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker
-      - run: docker build -t registry.digitalocean.com/roadmap-ai-container-registry/currency-converter:latest .
+      - run: |
+          docker login -u mahi87mnit@gmail.com -p ${DIGITALOCEAN_TOKEN} registry.digitalocean.com
+          docker build -t registry.digitalocean.com/roadmap-ai-container-registry/currency-converter:latest .
+          docker push registry.digitalocean.com/roadmap-ai-container-registry/currency-converter:latest
