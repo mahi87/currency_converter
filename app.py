@@ -1,4 +1,3 @@
-from unittest import result
 from flask import Flask, render_template, request
 from convert_handler import convert_handler
 
