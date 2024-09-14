@@ -6,4 +6,5 @@ jobs:
       - image: cimg/base:2022.05
     steps:
       - checkout
+      - setup_remote_docker
       - run: docker build -t registry.digitalocean.com/roadmap-ai-container-registry/currency-converter:latest .
